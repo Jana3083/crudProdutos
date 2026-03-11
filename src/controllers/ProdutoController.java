@@ -22,7 +22,8 @@ public class ProdutoController {
             produto.setPreco(Double.parseDouble(scanner.nextLine()));
 
             System.out.print("Informe a quantidade........: ");
-            produto.setQuantidade(Integer.parseInt(scanner.nextLine()));
+            produto.setQuantidade(Integer.parseInt
+                    (scanner.nextLine()));
 
             //Criando um objeto da classe ProdutoRepository
             var produtoRepository = new ProdutoRepository();
@@ -31,7 +32,9 @@ public class ProdutoController {
             System.out.println("\nProduto cadastrado com sucesso!");
         }
         catch(Exception e) {
+
             System.out.println("\nErro: " + e.getMessage());
         }
     }
 }
+
